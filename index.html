@@ -211,7 +211,7 @@
       if (twTimer) clearTimeout(twTimer);
       el.textContent = '';
       const text = el.dataset.text || '';
-      let i = 0; const speed = 50;
+      let i = 0; const speed = 20;
       twTimer = setTimeout(() => {
         function type() {
           if (i < text.length) { el.textContent += text.charAt(i); i++; twTimer = setTimeout(type, speed); }
